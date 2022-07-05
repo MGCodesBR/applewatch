@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* reset */
+*,::before,::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+html,
+body {
+   overflow-x: hidden;
+}
+
+html {
+   font-size: 10px; /* 1rem = 10px */
+   scroll-behavior: smooth;
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+/* project variables */
+:root {
+   /* font */
+   --first-font: "Roboto", sans-serif;
+   --size-font: 10px;
+   --normal-font: 400;
+   --bold-font: 700;
+
+   /* color */
+   --first-color: rgb(255, 255, 255);
+   --fisrt-color-light: rgba(255,255,255,0.8);
+   --second-color: rgb(0, 0, 0);
+   --second-color-dark: rgba(0, 0, 0,0.8);
+   --thirty-color: rgb(202, 32, 31);
+   --button-color: rgb(0, 113, 227);
+   --button-color-hover: rgba(0, 113, 227, 0.8);
+   
+   /* space */
+   --header-fixed-height: 4.8rem;
+}
+
+/* project settings */
+body {
+   font-family: var(--first-font);
+   font-size: var(--size-font);
+   font-weight: var(--normal-font);
+   background-color: var(--first-color);
+   color: var(--second-color-dark);
+   margin: var(--header-fixed-height) 0 0 0;
+}
