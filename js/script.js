@@ -1,4 +1,4 @@
-// header code
+// header
 const $menuBtn = document.querySelector(".menu-button");
 const $mainNav = document.querySelector(".main-nav");
 const $bag = document.querySelector(".bag");
@@ -16,3 +16,25 @@ function clickMenuButton() {
 }
 
 $menuBtn.addEventListener("click", clickMenuButton)
+
+// product carousel
+const $bullet = document.querySelectorAll(".bullet");
+let $bulletActive = document.querySelector(".bullet.-active");
+let $productActive = document.querySelector(".product.-active");
+
+function clickInBullet() {
+   let $bulletClicked = this;
+   $bulletActive.classList.remove("-active");
+   $bulletClicked.classList.add("-active");
+   $bulletActive = $bulletClicked;
+
+   $productActive.classList.remove("-active");
+   let idProduct = $bulletClicked.querySelector("a").getAttribute("href");
+   let $targetProduct = document.querySelector(idProduct);
+   $targetProduct.classList.add("-active");
+   $productActive = $targetProduct;
+}
+
+$bullet.forEach((item) => {
+   item.addEventListener("click", clickInBullet);
+})
