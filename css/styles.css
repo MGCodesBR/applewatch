@@ -343,10 +343,11 @@ body {
    @media screen and (min-width: 1024px) {
       .home > .container {
          max-width: 99.2rem;
-         height: 100%;
-         min-height: 60rem;
+         height: 100vh;
+         min-height: 50rem;
          padding: 0;
          flex-direction: row-reverse;
+         margin-top: -4.8rem;
       }
 }
 
@@ -545,7 +546,7 @@ body {
       }
    }
 
-   @media screen and (min-width: 768px) {
+   @media screen and (min-width: 1024px) {
       .home > .container > .content-home > .description {
          text-align: left;
       }

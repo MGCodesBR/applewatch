@@ -22,7 +22,8 @@ const $bullet = document.querySelectorAll(".bullet");
 let $bulletActive = document.querySelector(".bullet.-active");
 let $productActive = document.querySelector(".product.-active");
 
-function clickInBullet() {
+function clickInBullet(item) {
+   item.preventDefault();
    let $bulletClicked = this;
    $bulletActive.classList.remove("-active");
    $bulletClicked.classList.add("-active");
