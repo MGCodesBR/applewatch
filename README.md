@@ -19,4 +19,4 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 
 - Front End desenvolvido por [Marcial Garcia](https://www.linkedin.com/in/marcial-garcia/)
-- Tutorial em vídeo do desenvolvimento no canal [MG Codes](https://www.youtube.com/watch?v=nDGo4xTFQIc](https://www.youtube.com/channel/UC8hjVISR8VV6cLm6O6fJUhg)
+- Tutorial em vídeo do desenvolvimento no canal [MG Codes](https://www.youtube.com/channel/UC8hjVISR8VV6cLm6O6fJUhg)
